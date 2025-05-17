@@ -15,10 +15,10 @@ export default function SkipFilter({ filters, setFilters }) {
         { label: "500£+", value: "500+" },
       ];
   return (
-    <div className="bg-slate-900 p-5 rounded-md mb-8 text-white w-full max-w-4xl mx-auto space-y-4 border border-gray-700">
-      <div className="flex flex-col sm:flex-row gap-2 ">
-        {/* Dimensiune */}
-        <div className="flex-1">
+    <div className=" bg-slate-900 p-5 rounded-md mb-8 text-white w-full max-w-4xl mx-auto space-y-4 border border-gray-700">
+      <div className="flex flex-col sm:flex-row gap-2 "> 
+        
+        <div className="flex-1  ">
           <label className="block mb-2 text-sm font-semibold text-gray-400">Size</label>
           <div className="flex flex-wrap gap-2">
             {sizeRange.map((opt) => (
@@ -36,7 +36,7 @@ export default function SkipFilter({ filters, setFilters }) {
             ))}
           </div>
         </div>
-        {/* Pret */}
+        
         <div className="flex-1">
           <label className="block mb-2 text-sm font-semibold text-gray-400">Price</label>
           <div className="flex flex-wrap gap-2">
