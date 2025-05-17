@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Skip Selector App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a responsive web application built in **React.js** that allows users to select a waste skip size based on their needs and preferences. The UI is designed to be modern, clean, and intuitive, with a functional filtering system, selection logic, and modal information display.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Features
 
-### `npm start`
+###  Skip Filtering
+- **By Size**: Categorized as `<10 yards`, `10-20 yards`, `>20 yards`
+- **By Price**: `0-400 GBP`, `400-500 GBP`, `500+ GBP`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###  Skip Display
+- Responsive grid layout that adapts to different screen sizes
+- Displays skip size, price, VAT-inclusive price, and an image
+- Users can select only **one skip** at a time
+- A `Selected` badge and blue border help indicate the active choice
 
-### `npm test`
+###  Modal Info View
+- When the "Read more" button is clicked, a **modal** appears
+- The modal includes: skip image, full description, recommended use cases
+- Modal skip data is handled separately from selection to avoid data conflict
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###  Global State with React Context
+- A global context manages:
+  - `skips` data fetched
+  - modal open state & content
+  - selected skip for confirmation
 
-### `npm run build`
+###  UI & Styling
+- **TailwindCSS** for styling and layout
+- Uses `react-icons` for consistent iconography
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+##  Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React.js**
+- **TailwindCSS**
+- **React Context**
+- **React Icons**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##  Things To Do Next
+- Integrate with a payment gateway
+- Add step-by-step progress bar logic
+- Store skip selections and navigate user through checkout
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+##  Author:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built by **andrei_cos97@yahoo.com** – powered by coffee, nicotine... and questionable life choices :D .
